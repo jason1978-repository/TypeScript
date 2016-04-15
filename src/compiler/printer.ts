@@ -1314,7 +1314,9 @@ const _super = (function (geti, seti) {
                         emit(node);
                     }
                     else {
+                        write("(");
                         emitExpression(<Expression>node);
+                        write(")");
                     }
                 }
             }
